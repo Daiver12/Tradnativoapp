@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Ventanas.Crearperfil"
+             Title="Crearperfil"
+             BackgroundColor="#D2BD7C">
+    
+    <ContentPage.Content>
+        <VerticalStackLayout Padding="30" Spacing="20">
+
+            <Label 
+                Text="Crea tu ceunta"
+                FontSize="26"
+                FontAttributes="Bold"
+                TextColor="Black"
+                HorizontalOptions="CenterAndExpand"
+                />
+
+            <Entry 
+                Placeholder="Nombre Completo"
+                TextColor="Black"
+                PlaceholderColor="Gray"
+                HeightRequest="50"
+                BackgroundColor="White"
+                WidthRequest="250"
+                Margin="0,15,0,0"                
+                />
+            
+            <Entry 
+                Placeholder="Correo electronico"
+                TextColor="Black"
+                PlaceholderColor="Gray"
+                HeightRequest="50"
+                BackgroundColor="White"
+                WidthRequest="250"
+                Margin="0,15,0,0"
+                Text="{Binding Email}"
+                />
+            
+            <Entry 
+                Placeholder="Password"
+                IsPassword="True"
+                TextColor="Black"
+                PlaceholderColor="Gray"
+                HeightRequest="50"
+                BackgroundColor="White"
+                WidthRequest="250"
+                Margin="0,15,0,0"
+                Text="{Binding Pass}"
+                />
+
+            <Entry 
+                Placeholder="Confirm Password"
+                IsPassword="True"
+                TextColor="Black"
+                PlaceholderColor="Gray"
+                HeightRequest="50"
+                BackgroundColor="White"
+                WidthRequest="250"
+                Margin="0,15,0,0"  
+                />
+
+            <Button 
+                Text="SIGN UP"
+                FontAttributes="Bold"
+                BackgroundColor="#A020F0"
+                TextColor="White"
+                HeightRequest="50"
+                CornerRadius="25"
+                WidthRequest="300"
+                Margin="0,15,0,15"
+                Command="{Binding RegistroUser}"
+                />
+
+            <StackLayout 
+                Grid.Row="5"
+                HorizontalOptions="Center">
+                
+                <Label 
+                    Text="Ya tienes cuenta?" 
+                    HorizontalOptions="Center"
+                    TextColor="Black"
+                    />
+
+                <Button 
+                    Text="Sign In"
+                    HorizontalOptions="Center"
+                    BackgroundColor="Transparent"
+                    TextColor="Blue"
+                    x:Name="iniciarsesion"
+                    Clicked="iniciarsesion_Clicked"
+                    />
+            </StackLayout>
+            
+        </VerticalStackLayout>
+    </ContentPage.Content>
+</ContentPage>

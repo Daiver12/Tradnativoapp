@@ -1,0 +1,292 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.Ventanas.Informacion"
+             Title="Informacion"
+             BackgroundColor="Black">
+
+    <ContentPage.Content>
+        <ScrollView>
+            <VerticalStackLayout>
+
+                <Label
+                    Text="Informacion"
+                    FontSize="28"
+                    FontAttributes="Bold"
+                    TextColor="#C1A85B"
+                    HorizontalOptions="Center"
+                    VerticalOptions="Start"
+                    Margin="0,30,0,10" />
+
+                <!-- Imagen -->
+                <Grid>
+                    <Image 
+                        Source="rio.jpg"
+                        Aspect="AspectFill"
+                        HeightRequest="250"
+                        WidthRequest="400" 
+                        />
+
+                    <!-- Texto -->
+                    <StackLayout 
+                        VerticalOptions="Center" 
+                        HorizontalOptions="Center">
+                        
+                        <Label 
+                            Text="Descubre el Amazonas"
+                            FontSize="26"
+                            TextColor="White"
+                            HorizontalOptions="Center"
+                            />
+                        
+                        <Label 
+                            Text="El Pulmón del Mundo!"
+                            FontSize="18"
+                            TextColor="White"
+                            HorizontalOptions="Center"
+                            Margin="0,10,0,0" 
+                            />
+                        
+                        <Button 
+                            Text="Descubrelo Ahora"
+                            FontAttributes="Bold"
+                            BackgroundColor="#C1A85B"
+                            TextColor="White"
+                            CornerRadius="20"
+                            Margin="0,15,0,0"
+                            HeightRequest="50"
+                            WidthRequest="180" 
+                            />
+                        
+                    </StackLayout>
+                </Grid>
+
+                <!-- Separador-->
+                <BoxView 
+                    Color="Transparent"
+                    HeightRequest="1"
+                    WidthRequest="400"
+                    HorizontalOptions="Center"
+                    Margin="0,20,0,20"
+                    />
+
+                <!-- Titulo  -->
+                <Label 
+                    Text="Donde Comer"
+                    FontSize="20"
+                    TextColor="White"
+                    HorizontalOptions="Center"
+                    Margin="0,10,0,10"
+                    />
+
+                <!-- Seccion Que Comer 1-->
+                
+                <Frame 
+                    BackgroundColor="#2B2B2B" 
+                    CornerRadius="10" 
+                    Padding="20" 
+                    Margin="10">
+
+                    <VerticalStackLayout>
+                        <Image 
+                            Source="tierrasamazonicas.png"
+                            Aspect="AspectFill"
+                            HeightRequest="150"
+                            WidthRequest="150"
+                            />
+
+                        <!-- Informacion-->
+                        <HorizontalStackLayout 
+                            VerticalOptions="Center" 
+                            Spacing="10" 
+                            Margin="0,10,0,0">
+
+                            <Label 
+                                Text="Calle 8 # 7-50"
+                                FontSize="14"
+                                TextColor="White"   
+                                BackgroundColor="#C1A85B"
+                                Padding="5,2"
+                                VerticalOptions="Center"
+                                />
+
+                            <Label 
+                                Text="Tierras Amazonicas "
+                                FontSize="18"
+                                FontAttributes="Bold"
+                                TextColor="White"
+                                VerticalOptions="Center"
+                                />
+                        </HorizontalStackLayout>
+
+                        <HorizontalStackLayout 
+                            VerticalOptions="Center" 
+                            Spacing="5">
+
+                            <Image 
+                                Source="icono_location.png"
+                                WidthRequest="20"
+                                HeightRequest="35"
+                                VerticalOptions="Center"
+                                />
+
+                            <Label
+                                Text="Centro de la ciudad de Leticia"
+                                FontSize="14"
+                                TextColor="White"
+                                VerticalOptions="Center" 
+                                />
+
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                </Frame>
+                
+                <!-- Seccion Que Comer 2-->
+                
+                <Frame 
+                    BackgroundColor="#2B2B2B" 
+                    CornerRadius="10" 
+                    Padding="20" 
+                    Margin="10">
+
+                    <VerticalStackLayout>
+                        <Image 
+                            Source="puntolounge.jpg"
+                            Aspect="Fill"
+                            HeightRequest="150"
+                            WidthRequest="300"
+                            />
+
+                        <!-- Informacion-->
+                        <HorizontalStackLayout 
+                            VerticalOptions="Center" 
+                            Spacing="10" 
+                            Margin="0,10,0,0">
+
+                            <Label 
+                                Text=" Calle 5 No 4-70 "
+                                FontSize="14"
+                                TextColor="White"   
+                                BackgroundColor="#C1A85B"
+                                Padding="5,2"
+                                VerticalOptions="Center"
+                                />
+
+                            <Label 
+                                Text=" Punto Lounge 
+ "
+                                FontSize="18"
+                                FontAttributes="Bold"
+                                TextColor="White"
+                                VerticalOptions="Center"
+                                />
+                        </HorizontalStackLayout>
+
+                        <HorizontalStackLayout 
+                            VerticalOptions="Center" 
+                            Spacing="5">
+
+                            <Image 
+                                Source="icono_location.png"
+                                WidthRequest="20"
+                                HeightRequest="35"
+                                VerticalOptions="Center"
+                                />
+
+                            <Label
+                                Text="Centro de la ciudad de Leticia"
+                                FontSize="14"
+                                TextColor="White"
+                                VerticalOptions="Center" 
+                                />
+
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <!-- Separador-->
+                <BoxView 
+                    Color="Transparent"
+                    HeightRequest="1"
+                    WidthRequest="200"
+                    HorizontalOptions="Center"
+                    Margin="0,20,0,20"
+                    />
+
+                <!-- Titulo  -->
+                <Label 
+                    Text="Que visitar"
+                    FontSize="20"
+                    TextColor="White"
+                    HorizontalOptions="Center"
+                    Margin="0,10,0,10"
+                    />
+                
+                <!-- Seccion Que visitar-->
+             
+                <Frame 
+                    BackgroundColor="#2B2B2B" 
+                    CornerRadius="10" 
+                    Padding="20" 
+                    Margin="10">
+
+                    <VerticalStackLayout>
+                        <Image 
+                            Source="maloca.png"
+                            Aspect="Fill"
+                            HeightRequest="220"
+                            WidthRequest="350"
+                            />
+
+                        <!-- Informacion-->
+                        <HorizontalStackLayout 
+                            VerticalOptions="Center" 
+                            Spacing="10" 
+                            Margin="0,10,0,0">
+
+                            <Label 
+                                Text=" 185 km de Leticia"
+                                FontSize="14"
+                                TextColor="White"   
+                                BackgroundColor="#C1A85B"
+                                Padding="5,2"
+                                VerticalOptions="Center"
+                                />
+
+                            <Label 
+                                Text=" Maloca Arara"
+                                FontSize="18"
+                                FontAttributes="Bold"
+                                TextColor="White"
+                                VerticalOptions="Center"
+                                />
+                        </HorizontalStackLayout>
+
+                        <HorizontalStackLayout 
+                            VerticalOptions="Center" 
+                            Spacing="5">
+
+                            <Image 
+                                Source="icono_location.png"
+                                WidthRequest="20"
+                                HeightRequest="35"
+                                VerticalOptions="Center"
+                                />
+
+                            <Label
+                                Text="Puerto Nariño"
+                                FontSize="14"
+                                TextColor="White"
+                                VerticalOptions="Center" 
+                                />
+
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                </Frame>
+
+
+
+            </VerticalStackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
